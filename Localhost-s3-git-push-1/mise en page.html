@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En-tête</title>
+    <style>
+        body {
+            border-left: #333;
+            border-bottom-left-radius: 20rem;
+            font-family: Arial, sans-serif;
+            margin: ;
+            padding: ;
+            background-color: #080808;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .nav {
+            background-color: #ff00ff;
+            overflow: hidden;
+            height: 60px;
+            margin: 30px;
+            border-radius: 6px;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            width: 20px 5px;
+            margin-left: 15px  ;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .search-bar {
+            float: right;
+            padding: 14px 16px;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            background-color: #fff;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #ff00ff;
+            padding: 20px;
+            color: white;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            margin-top: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>En-tête</h1>
+    </div>
+    <div class="nav">
+        <a href="#">ACCUEIL</a>
+        <a href="#">L'ÉQUIPE</a>
+        <a href="#">PROJETS</a>
+        <a href="#">CONTACT</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher">
+        <div class="button-submit">
+          <button type="search>">search</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <h2>En-tête d'article</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.</p>
+            <h3>Sous-section</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, excepturi dicta aut laboriosam veritatis expedita minima, explicabo tempora consequuntur cupiditate, ratione sunt nihil sit saepe dolor totam. Quidem, culpa ea..</p>
+            <h3>Autre sous-section</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem minus nihil ab? Quis magni veniam error dolorum sed? Aperiam qui ipsam aliquid reiciendis neque nemo, officiis eius recusandae consectetur facere..</p>
+        </div>
+        <div class="sidebar">
+            <h2>En relation</h2>
+            <ul>
+                <li><a href="#">My project</a></li><br>
+                <li><a href="#">local host</a></li><br>
+                <li><a href="#">Developpement web et mobile</a></li><br>                                                           
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2024 Mon Site Web</p>
+    </div>
+</body>
+</html>

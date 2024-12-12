@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 20px auto;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-container input {
+            width: auto;
+            margin-right: 5px;
+        }
+        .submit-button {
+            text-align: center;
+        }
+        .submit-button input {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .mandatory {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p class="mandatory">*Mandatory to fill</p>
+        
+        <label for="firstname">Firstname: <span class="mandatory">*</span></label>
+        <input type="text" id="firstname" name="firstname" required>
+        
+        <label for="lastname">Lastname: <span class="mandatory">*</span></label>
+        <input type="text" id="lastname" name="lastname" required>
+        
+        <label for="birthday">Birthday: <span class="mandatory">*</span></label>
+        <div style="display: flex; justify-content: space-between;">
+            <select id="day" name="day" required>
+                <option value="">Day</option>
+                <!-- Add day options dynamically in actual code -->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <!-- More days -->
+            </select>
+            <select id="month" name="month" required>
+                <option value="">Month</option>
+                <!-- Add month options -->
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <!-- More months -->
+            </select>
+            <select id="year" name="year" required>
+                <option value="">Year</option>
+                <!-- Add year options -->
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <!-- More years -->
+            </select>
+        </div>
+        
+        <label for="username">Username: <span class="mandatory">*</span></label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="email">E-mail: <span class="mandatory">*</span></label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website">
+        
+        <label for="password">Password: <span class="mandatory">*</span></label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="repassword">Re-password: <span class="mandatory">*</span></label>
+        <input type="password" id="repassword" name="repassword" required>
+        
+        <div class="checkbox-container">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms & conditions.</label>
+        </div>
+        
+        <div class="submit-button">
+            <input type="submit" value="Sign up">
+        </div>
+    </form>
+</body>
+</html>
