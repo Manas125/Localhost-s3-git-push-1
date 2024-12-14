@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url("1000_F_196989969_uDzudu5RDjubOrCDmgnbFLVe0nvtRugB.jpg");
+}
+
+.card {
+    margin-bottom: 20px;
+}
+.image{
+    width: 150px;
+    height: auto;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+header {
+    background: url('images 8.jpg') no-repeat center center/cover;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+.social-icons{
+   margin: 10px ;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Ngoune Manas</a>
+    <div class="image">
+        <img src="mark-zuckerberg-and-priscilla-chan-1170x878.jpg" class="card-img-top" alt="Project 1">
+    </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Welcome to My Professional Portfolio</h1>
+        <p>Showcasing my skills and projects</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h2 style="color:aqua;">About ME</h2>
+        <p style="color:rgb(255, 115, 0);">A brief introduction about yourself.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Object-oriented programming is a programming.</p>
+                        <p> PHP Functions</p>
+                       <p>Arrays</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image 2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Arrays</p>
+                        <p>Asynchronous</p>
+                        <p>Callbacks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="flutter-Featured-Blog-Image2.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">State management.</p>
+                        <p>Widgets</p>
+                        <p>Deploying Flutter Application</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2>Contact</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+    <section id="contact" class="container my-5"> 
+        
+            <a href="https://www.X.com" target="_blank">
+            <img src="X_logo.jpg" class="social-icons" alt="X" style="width:80px; height=80px;">
+            <a href="https://www.whatsapp.com" target="_blank">
+            <img src="WhatsApp.svg.png" class="social-icons" alt="whatsapp" style="width:80px; height=80px;"> 
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="650c50b6190bf_com.facebook.lite.png" class="social-icons" alt="whatsapp" style="width:80px; height=80px;"> 
+    <!-- Footer -->
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
